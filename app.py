@@ -16,7 +16,7 @@ def index():
 @app.route("/get",methods=["GET","POST"])
 def chat():
     msg = request.form["msg"]
-    input=msg
+    input = msg
     return get_Chat_response(input)
 
 
